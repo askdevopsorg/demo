@@ -20,7 +20,7 @@ $timeout = 300; // 5 minutes
 $time = time();
 $ip = $_SERVER["REMOTE_ADDR"];
 
-if(!filter_var($ip, FILTER_VALIDATE_IP)) {echo '...';exit;} # exit is IP is invalid
+if(!filter_var($ip, FILTER_VALIDATE_IP)) {echo '...';exit;} # exit if the IP is invalid
 
 $file = "qa-cache/mydat.txt";
 $arr = @file($file);
